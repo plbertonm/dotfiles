@@ -10,6 +10,8 @@ vim.api.nvim_create_autocmd("ColorScheme", {
       "NormalFloat",
       "FloatBorder",
       "ColorColumn",
+      "StatusLine",
+      "StatusLineNC",
     }
 
     for _, group in ipairs(groups) do
@@ -47,10 +49,10 @@ vim.opt.termguicolors = true                       -- Enable 24-bit colors
 vim.opt.signcolumn = "no"                          -- Don't show sign column
 vim.opt.colorcolumn = "0"                          -- Show column at 0 characters
 vim.opt.showmatch = true                           -- Highlight matching brackets
-vim.opt.matchtime = 2                              -- How long to show matching bracket
+vim.opt.matchtime = 3                              -- How long to show matching bracket
 vim.opt.cmdheight = 1                              -- Command line height
 vim.opt.completeopt = "menuone,noinsert,noselect"  -- Completion options 
-vim.opt.showmode = false                           -- Don't show mode in command line 
+vim.opt.showmode = false                           -- Show mode in command line 
 vim.opt.pumheight = 10                             -- Popup menu height 
 vim.opt.pumblend = 10                              -- Popup menu transparency 
 vim.opt.winblend = 0                               -- Floating window transparency 
@@ -85,7 +87,7 @@ vim.opt.backspace = "indent,eol,start"             -- Better backspace behavior
 vim.opt.autochdir = false                          -- Don't auto change directory
 vim.opt.iskeyword:append("-")                      -- Treat dash as part of word
 vim.opt.path:append("**")                          -- include subdirectories in search
-vim.opt.selection = "exclusive"                    -- Selection behavior
+vim.opt.selection = "inclusive"                    -- Selection behavior
 vim.opt.mouse = ""                                 -- Disable mouse support
 vim.opt.clipboard:append("unnamedplus")            -- Use system clipboard
 vim.opt.modifiable = true                          -- Allow buffer modifications

@@ -2,12 +2,11 @@ return {
   "folke/which-key.nvim",
   event = "VeryLazy",
   opts = {
-    preset = "helix", -- helix=No canto direito, classic=clássico, modern=classico bonito como helix 
+    preset = "helix", -- helix = No canto direito, classic = clássico (em baixo, grande), modern = clássico bonito, como helix 
     plugins = {
-      marks = false,     -- desativa o menu de marks ao digitar ' ou `
+      marks = false,     -- desativa o menu de marks ao digitar 'ou'
       registers = false, -- desativa o menu de registros ao digitar "
-      spelling = { enabled = false }, -- desativa o z=
-      -- Na v3, operadores (como d, c, y, v) também são controlados aqui
+      spelling = { enabled = false }, -- desativa o z
     presets = {
       operators = false,    -- isso impede que apareça ajuda ao clicar v, d, y, etc.
       motions = false,      -- desativa ajuda para h, j, k, l...
