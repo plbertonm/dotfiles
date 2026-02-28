@@ -3,6 +3,7 @@ return {
   event = "VeryLazy",
   opts = {
     preset = "helix", -- helix = No canto direito, classic = clássico (em baixo, grande), modern = clássico bonito, como helix 
+    icons = { mappings = false },
     plugins = {
       marks = false,     -- desativa o menu de marks ao digitar 'ou'
       registers = false, -- desativa o menu de registros ao digitar "
