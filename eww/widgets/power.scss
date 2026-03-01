@@ -1,0 +1,93 @@
+/* ================= POWER MENU ================= */
+
+.power-menu {
+  background: rgba(30, 30, 46, 0.95);
+  padding: 30px;
+  border-radius: 18px;
+  min-width: 350px;
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Botões do menu principal */
+
+.power-menu button {
+  background: rgba(49, 50, 68, 0.8);
+  padding: 16px 22px;
+  border-radius: 14px;
+  transition: 180ms ease;
+}
+
+.power-menu button:hover {
+  background: rgba(137, 180, 250, 0.15);
+  transform: translateY(-4px);
+}
+
+/* Ícones grandes */
+
+.cmd-button-icon {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+/* Cores individuais */
+
+.shutdown:hover {
+  background: rgba(243, 139, 168, 0.25);
+}
+
+.reboot:hover {
+  background: rgba(250, 179, 135, 0.25);
+}
+
+.logout:hover {
+  background: rgba(166, 227, 161, 0.25);
+}
+
+/* ================= SELECT CONFIRM ================= */
+
+.select {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.select-widget {
+  background: rgba(30, 30, 46, 0.98);
+  padding: 24px;
+  border-radius: 18px;
+  min-width: 280px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+.select-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+/* Botões confirmação */
+
+.yes,
+.no {
+  padding: 10px 18px;
+  border-radius: 12px;
+  transition: 150ms ease;
+}
+
+.yes {
+  background: #a6e3a1;
+  color: #1e1e2e;
+}
+
+.yes:hover {
+  background: #94e2d5;
+}
+
+.no {
+  background: #f38ba8;
+  color: #1e1e2e;
+}
+
+.no:hover {
+  background: #eba0ac;
+}
+

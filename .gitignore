@@ -1,0 +1,9 @@
+#Ignora tudo
+/*
+
+# Não ignora
+!.gitignore
+!hypr/
+!eww/
+!nvim/
+!alacritty/

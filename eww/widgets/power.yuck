@@ -1,0 +1,75 @@
+(defwindow select
+  :monitor 0
+  :class "select"
+  :geometry (
+    geometry
+      :width "200px"
+      :height "150px"
+      :anchor "center"
+  )
+  :stacking "overlay"
+
+  (selectWidget :command confirm_cmd)
+)
+
+(defwindow power
+  :monitor 0
+  :geometry (
+    geometry
+      :width "400px"
+      :height "300px"
+      :anchor "center"
+  )
+  :stacking "overlay"
+  
+  (powerWidget)
+)
+
+(defvar confirm_cmd "")
+
+(defwidget powerWidget []
+  (centerbox 
+    :orientation "h"
+    :class "power-menu"
+
+    (powerButton :icon "󰐥" :label "Shutdown"  :cmd "systemctl poweroff" :class "shutdown")
+    (powerButton :icon "⭘" :label "Logout"    :cmd "hyprctl dispatch exit" :class "logout")
+    (powerButton :icon "󰍃" :label "Reboot"    :cmd "systemctl reboot" :class "reboot")
+ ))
+    
+(defwidget powerButton [icon label cmd class]
+  (button
+    :class class
+    :onclick "eww close power && eww update confirm_cmd='${cmd}' && eww open select"
+
+    (box :orientation "v" :halign "center"
+      (label :class "cmd-button-icon" :text icon)
+      (label :text label)
+    )
+  )
+)
+
+
+(defwidget selectWidget [command]
+  (box
+    :orientation "h"
+    :class "select-widget"
+    :space-evenly false
+    :spacing 20
+
+    
+    (label
+      :class "select-title"
+      :text "Are you sure?")
+    
+    (button
+      :class "yes"
+      :onclick "eww close select && ${command}"
+      "Yes")
+
+    (button
+      :class "no"
+      :onclick "eww close select"
+      "No")
+  )
+)

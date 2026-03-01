@@ -1,0 +1,238 @@
+* {
+  all: unset;
+  font-family: "JetBrainsMono Nerd Font Mono";
+  font-size: 12px;
+}
+
+@keyframes active-glow {
+  0% {
+    background-color: #89b4fa;
+  }
+  50% {
+    background-color: #a3c4ff;
+  }
+  100% {
+    background-color: #89b4fa;
+  }
+}
+
+/* ================= BAR ================= */
+
+.bar {
+  background-color: rgba(30, 30, 46, 0.85);
+  border-radius: 14px;
+}
+
+.bar-right > * {
+  margin-left: 14px;
+}
+
+
+/* ================= Sidestuff ================= */
+
+.sidestuff {
+  
+}
+
+/* ================= STATS ================= */
+
+.clock {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+/* ================= BUTTONS ================= */
+
+button {
+  all: unset;
+  padding: 2px 6px;
+}
+
+/* ================= WORKSPACES ================= */
+
+.ws {
+  color: black
+}
+
+.ws:hover {
+  color: rgba(137, 180, 250, 0.2);
+}
+
+.ws:active {
+  color: #89b4fa;
+  animation: active-glow 1s ease-in-out;
+}
+
+.ws.active {
+  background-color: #89b4fa;
+  color: #89b4fa;
+}
+
+
+/* ================= MUSIC ================= */
+
+.music {
+  opacity: 0.8;
+  padding: 0 6px;
+}
+
+/* ================= STATS ================= */
+
+.stat-icon .icon {
+  opacity: 0.7;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.stat-text {
+  font-weight: 500;
+}
+
+/* ================= POWER MENU ================= */
+
+.power-menu {
+  background: rgba(30, 30, 46, 0.95);
+  padding: 30px;
+  border-radius: 18px;
+  min-width: 350px;
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Botões do menu principal */
+
+.power-menu button {
+  background: rgba(49, 50, 68, 0.8);
+  padding: 16px 22px;
+  border-radius: 14px;
+  transition: 180ms ease;
+}
+
+.power-menu button:hover {
+  background: rgba(137, 180, 250, 0.15);
+}
+
+/* Ícones grandes */
+
+.cmd-button-icon {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+/* Cores individuais */
+
+.shutdown:hover {
+  background: rgba(243, 139, 168, 0.25);
+}
+
+.reboot:hover {
+  background: rgba(250, 179, 135, 0.25);
+}
+
+.logout:hover {
+  background: rgba(166, 227, 161, 0.25);
+}
+
+/* ================= SELECT CONFIRM ================= */
+
+.select {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.select-widget {
+  background: rgba(30, 30, 46, 0.98);
+  padding: 24px;
+  border-radius: 18px;
+  min-width: 280px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+.select-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+/* Botões confirmação */
+
+.yes,
+.no {
+  padding: 10px 18px;
+  border-radius: 12px;
+  transition: 150ms ease;
+}
+
+.yes {
+  background: #a6e3a1;
+  color: #1e1e2e;
+}
+
+.yes:hover {
+  background: #94e2d5;
+}
+
+.no {
+  background: #f38ba8;
+  color: #1e1e2e;
+}
+
+.no:hover {
+  background: #eba0ac;
+}
+
+/* ===== Slider Container ===== */
+
+.slider {
+  background: transparent;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+/* Ícone */
+
+.slider .icon {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 14px;
+  margin-right: 6px;
+  color: #cdd6f4;
+  transition: 0.2s ease;
+}
+
+.slider .icon:hover {
+  color: #89b4fa;
+}
+
+/* ===== Scale ===== */
+
+scale {
+  min-width: 90px;
+}
+
+/* Track */
+
+scale trough {
+  background-color: #313244;
+  border-radius: 6px;
+  min-height: 6px;
+}
+
+/* Barra preenchida */
+
+scale highlight {
+  background: linear-gradient(90deg, #89b4fa, #b4befe);
+  border-radius: 6px;
+}
+
+/* Thumb */
+
+scale slider {
+  background-color: #cdd6f4;
+  border-radius: 50%;
+  min-width: 12px;
+  min-height: 12px;
+}
+
+scale slider:hover {
+  background-color: #89b4fa;
+}
+
