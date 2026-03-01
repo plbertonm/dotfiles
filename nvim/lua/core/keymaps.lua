@@ -19,9 +19,16 @@ map("n", "<C-l>", "<C-w>l", { desc = "Focus on Left window" })
 -- map("n", "<leader>e", ":NvimTreeOpen<cr>", { desc = "Open File Tree" })
 map("n", "<leader>e", ":lua MiniFiles.open()<cr>", { desc = "Open Mini Files"})
 
+-- Pick
 map("n", "<leader>f", ":Pick files<cr>", { desc = "Pick Files"})
-map("n", "<leader>g", ":Pick grep_live", { desc = "Pick text inside files W/ Grep"})
-map("n", "<leader>?", ":Pick help", { desc = "Help Menu"})
+map("n", "<leader>g", ":Pick grep_live<cr>", { desc = "Pick text inside files W/ Grep"})
+map("n", "<leader>?", ":Pick help<cr>", { desc = "Help Menu"})
+
+-- Buffers
+map("n", "<leader>bB", ":Pick buffers<cr>", { desc = "Buffers Menu"})
+map("n", "<leader>bb", ":ls<cr>", { desc = "Buffers List"})
+map("n", "<Tab>", ":bn<cr>", { desc = "Next buffer"})
+map("n", "<S-tab>", ":bp<cr>", { desc = "Previous buffer"})
 
 -- configurar Tab para menus pops (mini.completions)
 map('i', '<Tab>', [[pumvisible() ? "\<C-n>" : "\<Tab>"]], { desc = "Scroll down on Popups", expr = true })

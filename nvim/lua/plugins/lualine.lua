@@ -7,12 +7,20 @@ return {
     require("lualine").setup({
       options = {
         theme = {
-          vim.api.nvim_set_hl(0, "lualine_a_normal", { bg = "none" }),
-          vim.api.nvim_set_hl(0, "lualine_b_normal", { bg = "none" }),
-          vim.api.nvim_set_hl(0, "lualine_c_normal", { bg = "none" }),
-          vim.api.nvim_set_hl(0, "lualine_x_normal", { bg = "none" }),
-          vim.api.nvim_set_hl(0, "lualine_y_normal", { bg = "none" }),
-          vim.api.nvim_set_hl(0, "lualine_z_normal", { bg = "none" }),
+          normal = {
+            a = { bg = "none" },
+            b = { bg = "none" },
+            c = { bg = "none" },
+          },
+          insert = { a = { bg = "none" } },
+          visual = { a = { bg = "none" } },
+          replace = { a = { bg = "none" } },
+          command = { a = { bg = "none" } },
+          inactive = {
+            a = { bg = "none" },
+            b = { bg = "none" },
+            c = { bg = "none" },
+          },
         },
         globalstatus = true,
         component_separators = "",
@@ -43,7 +51,7 @@ return {
         lualine_z = {
           {
             function()
-              return os.date("%H:%M")
+              return os.date("%H:%M:%S")
             end,
             icon = "", -- ícone de relógio
           },
