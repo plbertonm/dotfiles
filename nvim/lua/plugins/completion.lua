@@ -1,5 +1,5 @@
 return {
-  "echasnovski/mini.completion",
+  "nvim-mini/mini.completion",
   config = function()
     local icons = require("mini.icons")
     icons.setup()

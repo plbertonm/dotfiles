@@ -15,6 +15,7 @@ Clone o repo:
 git clone https://github.com/seuuser/dotfiles.git
 cd dotfiles
 ./install.sh
+```
 
 ---
 

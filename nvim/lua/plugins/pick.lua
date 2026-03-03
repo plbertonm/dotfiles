@@ -1,5 +1,5 @@
 return {
-  "echasnovski/mini.pick",
+  "nvim-mini/mini.pick",
   config = function()
     require("mini.pick").setup({
       mappings = {

@@ -1,5 +1,5 @@
 return {
-  "echasnovski/mini.nvim",
+  "echasnovski/mini.move",
   config = function()
     require("mini.move").setup({
       -- Module mappings. Use `''` (empty string) to disable one.

@@ -92,3 +92,6 @@ vim.opt.mouse = ""                                 -- Disable mouse support
 vim.opt.clipboard:append("unnamedplus")            -- Use system clipboard
 vim.opt.modifiable = true                          -- Allow buffer modifications
 vim.opt.encoding = "UTF-8"                         -- Set encoding
+
+-- cmdline (quando entrar no neovim 12>)
+-- vim.o.pumborder = 'single'

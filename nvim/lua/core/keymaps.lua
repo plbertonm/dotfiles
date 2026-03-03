@@ -33,3 +33,5 @@ map("n", "<S-tab>", ":bp<cr>", { desc = "Previous buffer"})
 -- configurar Tab para menus pops (mini.completions)
 map('i', '<Tab>', [[pumvisible() ? "\<C-n>" : "\<Tab>"]], { desc = "Scroll down on Popups", expr = true })
 map('i', '<S-Tab>', [[pumvisible() ? "\<C-p>" : "\<S-Tab>Files"]], { desc = "Scroll up on Popups", expr = true })
+
+

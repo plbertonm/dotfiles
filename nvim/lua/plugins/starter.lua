@@ -1,5 +1,5 @@
 return {
-  "echasnovski/mini.starter",
+  "nvim-mini/mini.starter",
   config = function()
     require("mini.starter").setup({})
   end
